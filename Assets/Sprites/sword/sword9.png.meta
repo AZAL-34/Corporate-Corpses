@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 371434f15a787314e8c7c01a6d4b4a20
+guid: 8b98f58bd117c5e44b317ad4f0fe0576
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1007106662416126401
-    second: sword6_0
+      213: 1137496837172204663
+    second: sword9_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,17 +109,56 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sword6_0
+      name: sword9_0
       rect:
         serializedVersion: 2
         x: 4
         y: 0
         width: 8
-        height: 35
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +167,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f3ee1cf83d90602f0800000000000000
-      internalID: -1007106662416126401
+      spriteID: 77497c0c85339cf00800000000000000
+      internalID: 1137496837172204663
       vertices: []
       indices: 
       edges: []
@@ -148,7 +187,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sword6_0: -1007106662416126401
+      sword9_0: 1137496837172204663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
