@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         RIGHT
     }
 
+    public ConstantForce2D gravity;
     public int attackDamage;
     public int attackReach;
     public int maxHealth;
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
     public Sprite StunRight;
 
     private int currentHealth;
+    private Rigidbody2D rb;
     private SpriteRenderer spriteRend;
     private State state;
     private Vector2 direction;
@@ -216,10 +218,13 @@ public class PlayerController : MonoBehaviour
         state = State.IDLE;
         direction = Vector2.zero;
         directionEnum = Direction.DOWN;
+        gravity = GetComponent<ConstantForce2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
+        gravity.force = -(transform.up * 9.8f);
         GetInput();
         UpdateSprite();
         Move();
