@@ -49,13 +49,13 @@ public class PlayerController : MonoBehaviour
 
     void GetInput()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             if (state != State.HURT && state != State.STUN)
             {
-                state = State.WALK;
-                direction += Vector2.up;
-                directionEnum = Direction.UP;
+                gravity.force = Vector2.zero;
+                transform.Rotate(new Vector3(0, 0, 100) * Time.deltaTime);
+                directionEnum = Direction.DOWN;
             }
         }
         if (Input.GetKeyDown(KeyCode.A))
@@ -67,12 +67,12 @@ public class PlayerController : MonoBehaviour
                 directionEnum = Direction.LEFT;
             }
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             if (state != State.HURT && state != State.STUN)
             {
-                state = State.WALK;
-                direction += Vector2.down;
+                gravity.force = Vector2.zero;
+                transform.Rotate(new Vector3(0, 0, -100) * Time.deltaTime);
                 directionEnum = Direction.DOWN;
             }
         }
@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
         {
             if (state != State.HURT && state != State.STUN)
             {
-                direction -= Vector2.up;
+                gravity.force = -transform.up * 9.8f;
             }
         }
         if (Input.GetKeyUp(KeyCode.A))
@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
         {
             if (state != State.HURT && state != State.STUN)
             {
-                direction -= Vector2.down;
+                gravity.force = -transform.up * 9.8f;
             }
         }
         if (Input.GetKeyUp(KeyCode.D))
